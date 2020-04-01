@@ -1,0 +1,7 @@
+{
+  "name": "quePreferirias",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
