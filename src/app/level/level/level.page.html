@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar class="background">
+    <ion-title class="color">Nivel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+  <!-- 
+  <div class="contenedorBotonNivel contenedorSuave ion-activatable ripple-parent" (click)="accederNivel('2')">
+    <ion-avatar class="avatarNivel">
+      <img src="assets/level-images/softLevel.jpg" alt="">
+    </ion-avatar>
+    <h2 class="nombreBotonNivel">Nivel Suave</h2>
+    
+    <ion-ripple-effect></ion-ripple-effect>
+  </div> -->
+
+  <div class="divTitulo">
+    <span class="titulo">¿Que nivel quieres elegir?</span>
+  </div>
+
+  <div class="contenedorBotonNivel contenedorNormal ion-activatable ripple-parent" (click)="accederNivel(1)">
+
+    <div class="divAvatarNivel">
+      <ion-avatar class="avatarNivel">
+        <img class="imgAvatar" src="assets/level-images/softLevel.jpg" alt="">
+      </ion-avatar>
+    </div>
+    <div class="divTextoBoton">
+      <h2 class="nombreBotonNivel">Normal</h2> 
+    <img src="assets/gif/normalTexto.gif" alt=""> 
+      <!-- <ion-thumbnail slot="start" class="imgTexto">
+        <img src="assets/gif/normalTextoGif.gif" class="scaleImg">
+      </ion-thumbnail> -->
+    </div>
+    <div class="divAvatarNivel">
+      <ion-avatar class="avatarNivel2">
+        <img class="imgAvatar2" src="assets/level-images/softLevel.jpg" alt="">
+      </ion-avatar>
+    </div>
+
+    <ion-ripple-effect></ion-ripple-effect>
+  </div>
+
+  <div class="contenedorBotonNivel contenedorHarcore ion-activatable ripple-parent" (click)="accederNivel(2)">
+
+    <div class="divAvatarNivel">
+      <ion-avatar class="avatarNivel">
+        <img class="imgAvatar" src="assets/level-images/hardLevel.jpg" alt="">
+      </ion-avatar>
+    </div>
+    <div class="divTextoBoton">
+       <h2 class="nombreBotonNivel">Harcore</h2>
+    <!--<img src="assets/gif/normalTexto.gif" alt=""> -->
+     <!--  <ion-thumbnail slot="start" class="imgTexto">
+        <img src="assets/gif/hardcoreTextoGif.gif">
+      </ion-thumbnail> -->
+    </div>
+    <div class="divAvatarNivel">
+      <ion-avatar class="avatarNivel2">
+        <img class="imgAvatar2" src="assets/level-images/hardLevel.jpg" alt="">
+      </ion-avatar>
+    </div>
+
+    <ion-ripple-effect></ion-ripple-effect>
+  </div>
+
+</ion-content>

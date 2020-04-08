@@ -1,0 +1,156 @@
+ion-content.background{
+    /*  --background: url('/assets/images/initBackground.jpg') no-repeat 70% 95% ; */
+     --background: white;
+   }
+ 
+   ion-toolbar.background{
+     /*  --background: url('/assets/images/initBackground.jpg') no-repeat 70% 95% ; */
+      --background: #04c1ed;
+    }
+ 
+   .titulo{
+     font-size: 90px;
+     font-weight: bolder;
+     font-style: oblique;
+     color: black;
+     box-shadow: 0 16px 24px 2px rgba(255, 252, 252, 0), 0 6px 30px 5px rgba(255, 255, 255, 0), 0 8px 10px -7px rgba(243, 240, 251, 0)
+ }
+ 
+ .contenedorInicio{
+     margin: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     text-align: center;
+ }
+ 
+ .titulo2{
+     font-size: 40px;
+     font-weight: bolder;
+     font-style: oblique;
+     color: black;
+     box-shadow: 0 16px 24px 2px rgba(255, 252, 252, 0), 0 6px 30px 5px rgba(255, 255, 255, 0), 0 8px 10px -7px rgba(243, 240, 251, 0)
+ }
+ 
+ .textoCaja{
+     font-size: 28px;
+     font-weight: bolder;
+     font-style: oblique;
+     color: inherit;
+     box-shadow: 0 16px 24px 2px rgba(255, 252, 252, 0), 0 6px 30px 5px rgba(255, 255, 255, 0), 0 8px 10px -7px rgba(243, 240, 251, 0)
+ }
+ 
+ .contenedorInicio2{
+     margin-top: 5%;
+     text-align: center;
+     margin-bottom: 12%;
+ }
+ 
+ .contenedorJuego{
+     height: calc(100vh - 170px);
+ }
+ .divJuego1{
+     height: 49%;
+     border: 2px solid #467a86;
+     border-radius: 2%;
+     background: linear-gradient(0deg, rgb(4, 193, 237) 6%, #ffffff 20%);
+     color: black;
+ }
+ .divJuego2{
+     height: 49%;
+     border: 2px solid #467a86;
+     border-radius: 2%;
+     background: linear-gradient(0deg, #ffffff 6%, rgb(4, 193, 237) 20%);
+     margin-top: 2%;
+     color: black;
+ }
+ 
+ .avatarNivel{
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%) scale(2);
+     z-index: 2000;
+ }
+ 
+ .spanVolver{
+     color: white;
+ }
+
+ //Botones ronda finalizada
+
+ .divTituloFinalizado{
+  padding: 5%;
+  text-align: center;
+  margin-top: 4%;
+ }
+
+ .contenedorBotonNivel{
+  //height: 9%;
+  width: 96%;
+  height: 9%;
+  border-radius: 15px;
+  padding: 3px;
+  margin-top: 15%;
+  margin-left: 2%;
+  /* background-color: #610202; */
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2);
+  color: white;
+  border: 3px solid #171717;
+  display: flex;
+}
+
+.divAvatarVolver{
+  width: 20%;
+  float: left;
+}
+.divTextoBoton{
+  width: 48%;
+}
+.textoBotonVolver{
+  font-size: 20px;
+  width: 60%;
+  margin-top: 5%;
+  text-align: center;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.iconoBoton{
+  padding: 5%;
+}
+ 
+ 
+ 
+ /*ANIMACIONES*/
+ .animated {
+     animation: roll 3s normal;
+     transform: rotate(360deg);
+     //opacity: .7;
+   }
+   
+   /* @keyframes roll {
+     0% {
+       transform: rotate(0);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   } */
+
+   @keyframes roll {
+    0% {
+      transform: rotateX(0);
+      //background-color: red; 
+    }
+    25%{
+      color: transparent; 
+    }
+    75% {
+      transform: rotateX(360deg);
+      //background-color: red; 
+    }
+  }

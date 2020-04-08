@@ -1,7 +1,8 @@
 {
   "name": "quePreferirias",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

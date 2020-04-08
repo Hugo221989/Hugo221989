@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar class="background">
+    <ion-buttons slot="start" *ngIf="!finalizado">
+      <ion-button [routerLink]="['/level']">
+        <div class="spanVolver"><ion-icon name="chevron-back-outline"></ion-icon>Volver</div>
+      </ion-button>
+    </ion-buttons>
+    <ion-title><span class="spanVolver">Nivel Normal</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+<div>
+  <div class="contenedorInicio" *ngIf="!comenzar && !finalizado">
+    <span id="titulo" class="titulo">{{ datosInicio }}</span>
+  </div>
+
+  <div class="contenedorInicio2" *ngIf="comenzar && !finalizado">
+    <span id="titulo2" class="titulo2">¿Que preferirías?</span>
+  </div>
+  <ion-grid class="contenedorJuego" *ngIf="comenzar && !finalizado">
+    <ion-row class="divJuego1 ion-activatable ripple-parent" 
+    (click)="siguiente()"
+    [ngClass]="{'animated': cambio1}">
+      <ion-col>
+        <div class="contenedorInicio">
+          <span id="titulo" class="textoCaja">{{ texto1 }}</span>
+        </div>
+      </ion-col>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-row>
+
+    <!-- <div class="divAvatarNivel"> -->
+      <ion-avatar class="avatarNivel">
+        <img src="assets/level-images/softLevel.jpg" alt="">
+      </ion-avatar>
+    <!-- </div> -->
+
+    <ion-row class="divJuego2 ion-activatable ripple-parent" 
+    (click)="siguiente()"
+    [ngClass]="{'animated': cambio2}">
+      <ion-col>
+        <div class="contenedorInicio">
+          <span id="titulo" class="textoCaja">{{ texto2 }}</span>
+        </div>
+      </ion-col>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <!-- FINALIZADO -->
+
+  <div *ngIf="finalizado">
+    <div class="divTituloFinalizado">
+      <span class="titulo2">Ha finalizado la ronda</span>
+    </div>
+  
+    <div class="contenedorBotonNivel contenedorNormal ion-activatable ripple-parent" (click)="reiniciarNivel()">
+        <div class="divAvatarVolver">
+          <ion-avatar class="iconoBoton">
+            <img src="assets/icon/back.png" class="scaleImg">
+          </ion-avatar>
+        </div>
+        <div class="divTextoBoton">
+          <h2 class="textoBotonVolver">Otra ronda</h2>
+        </div>
+        <ion-ripple-effect></ion-ripple-effect>
+      </div>
+
+      <div class="contenedorBotonNivel contenedorNormal ion-activatable ripple-parent" (click)="irMenuPrincipal()">
+        <div class="divAvatarVolver">
+          <ion-avatar class="iconoBoton">
+            <img src="assets/icon/home.png" class="scaleImg">
+          </ion-avatar>
+        </div>
+        <div class="divTextoBoton">
+          <h2 class="textoBotonVolver">Ir al inicio</h2>
+        </div>
+        <ion-ripple-effect></ion-ripple-effect>
+      </div>
+  
+      
+    </div>
+
+
+</div>
+</ion-content>

@@ -1,0 +1,99 @@
+ion-content.background{
+    /* --background: url('/assets/images/initBackground.jpg') no-repeat 70% 95% ; */
+    --background: white;
+  }
+  ion-toolbar.background{
+    /*  --background: url('/assets/images/initBackground.jpg') no-repeat 70% 95% ; */
+     --background: #04c1ed;
+   }
+
+   ion-title.color{
+       --color: white;
+   }
+
+
+  .contenedorBotonNivel{
+    //height: 9%;
+    width: 96%;
+    height: 15%;
+    border-radius: 15px;
+    padding: 3px;
+    margin-top: 10%;
+    margin-left: 2%;
+    /* background-color: #610202; */
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2);
+    color: white;
+    border: 3px solid #171717;
+    display: flex;
+}
+
+.nombreBotonNivel{
+    font-size: 30px;
+    margin-top: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+
+.divAvatarNivel{
+    width: 25%;
+    float: right;
+}
+.divTextoBoton{
+    width: 48%;
+    top: 20%;
+    position: relative;
+}
+.imgTexto{
+    width: 100%;
+}
+.avatarNivel{
+    float: left;
+}
+.avatarNivel2{
+    float: right;
+}
+.imgAvatar{
+    position: relative;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.imgAvatar2{
+    position: relative;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.contenedorNormal{
+    /* background: rgb(150,190,226);
+    background: linear-gradient(90deg, rgba(150,190,226,1) 0%, rgba(84,113,205,1) 46%, rgba(1,4,19,1) 100%); */
+    background: #04c1ed;
+}
+.contenedorHarcore{
+    background: rgb(255,0,0);
+   /*  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(121,9,9,1) 46%, rgba(18,18,18,1) 100%); */
+    
+}
+
+.scaleImg{
+    transform: scale(0.8);
+    height: 122%;
+}
+
+.divTitulo{
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 12%;
+}
+.titulo{
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: oblique;
+    color: black;
+    box-shadow: 0 16px 24px 2px rgba(255, 252, 252, 0), 0 6px 30px 5px rgba(255, 255, 255, 0), 0 8px 10px -7px rgba(243, 240, 251, 0)
+}
